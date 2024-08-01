@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="final.html" id="for" >
+      <h1>Registration</h1>
+      <div class="field">
+        
+            <div class="namef">
+              <label for="name">Name: </label>
+              <input type="text"  id="name">
+            </div>
+            <div class="emfield">
+              <label for="email">Email: </label>
+              <input type="email" id="email">
+            </div>
+            <div class="addfield">
+              <label for="address">Address</label>
+            <input type="text" id="address">
+            </div>
+            
+            
+            <div class="sub">
+              <button type="submit" id="submit">Submit
+              </button>
+              <a href="final.html" id="next">GetData</a>
+            </div>
+        
+      </div>
+    </form>
+
+<script>
+    var na = document.querySelector("#name");
+    var em = document.querySelector("#email");
+    var adr = document.querySelector("#address");
+    var btn = document.querySelector("#submit");
+    var fna = document.querySelector("#next");
+    var forr = document.querySelector("#for");
+
+    const validation = (e) => {
+        e.preventDefault();
+        console.log("clicked");
+      if(na.value === "" || na.value === null){
+        window.alert("please fill the name field")
+      }
+      else if(na.value.length<6){
+        window.alert("name must be atleast six characters")
+      }
+      localStorage.setItem("name",na.value);
+      localStorage.setItem("email",em.value);
+      localStorage.setItem("address",adr.value);
+      na.value = "";
+      em.value = "";
+      adr.value = "";
+      window.alert("submited successfull to get your data click getdata button")--
+      return;
+    }
+
+    btn.addEventListener("click",validation)
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Input Value</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Enter some text">
+    <button id="clic" class="">Get Value</button>
+
+    <script>
+        // function getInputValue() {
+        //     // Get the input element
+        //     var inputElement = document.getElementById('myInput');
+        //     // Get the value of the input element
+        //     var inputValue = inputElement.value;
+        //     // Display the value in an alert or console log
+        //     alert("Input value: " + inputValue);
+        //     // or
+        //     console.log("Input value: " + inputValue);
+        // }
+        let cl = document.querySelector("#clic")
+        let cl2 = document.querySelector("#myInput")
+        cl.addEventListener("click",(e)=>{
+            e.preventDefault()
+            console.log(e.target)
+            console.log(e.target.accessKey)
+            console.log(e.target.firstChild.data);
+        }
+    )
+    cl2.addEventListener("click",(e)=>{
+        console.log(e.target.firstChild.data);
+    })
+    </script>
+</body>
+</html>
