@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Employee Registration Form -->
+<form id="employee-registration-form">
+    <h2>Employee Registration</h2>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required><br><br>
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number" name="phone-number" required><br><br>
+    <label for="job-title">Job Title:</label>
+    <select id="job-title" name="job-title" required>
+      <option value="">Select Job Title</option>
+      <option value="Software Engineer">Software Engineer</option>
+      <option value="Data Scientist">Data Scientist</option>
+      <option value="Product Manager">Product Manager</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+      <option value="">Select Department</option>
+      <option value="IT">IT</option>
+      <option value="Marketing">Marketing</option>
+      <option value="Sales">Sales</option>
+      <option value="HR">HR</option>
+    </select><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>

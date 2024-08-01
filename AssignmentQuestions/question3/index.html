@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: rgb(255, 152, 217);
+            text-decoration: dotted;
+        }
+        label{
+            font-size: 30px;
+        }
+        select{
+            font-size: 30px;
+        }
+        #stars{
+            margin-bottom: 20px;
+            border: 2px solid salmon;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Feedback Form</h1>
+    <label for="stars">Select Stars: </label>
+    <select name="stars" id="stars">
+        <option value="1 Star">1&#9733;</option>
+        <option value="2 Star">2&#9733;</option>
+        <option value="3 Star">3&#9733;</option>
+        <option value="4 Star">4&#9733;</option>
+        <option value="5 Star">5&#9733;</option>
+    </select><br>
+    <textarea name="cmt" id="cmt" cols="40" rows="10">Enter about hotel services...</textarea><br>
+    <button type="submit" id="sub">Submit</button>
+</body>
+</html>
+
+<!-- <form id="feedback-form">
+    <h2>Provide Your Feedback</h2>
+    <label for="rating">Rating:</label>
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5">
+      <label for="star5" title="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4" title="4 stars">&#9733;&#9733;&#9733;&#9733;</label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3" title="3 stars">&#9733;&#9733;&#9733;</label>
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2" title="2 stars">&#9733;&#9733;</label>
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1" title="1 star">&#9733;</label>
+    </div>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" rows="5" cols="30"></textarea>
+    <button type="submit">Submit Feedback</button>
+  </form> -->
