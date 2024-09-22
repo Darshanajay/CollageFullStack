@@ -1,0 +1,1 @@
+The toFixed() method in JavaScript is used to format a number using fixed-point notation. This means that it will round the number to a specified number of decimal places and return the result as a string.

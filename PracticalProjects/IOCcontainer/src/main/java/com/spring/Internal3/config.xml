@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       	 xmlns:context="http://www.springframework.org/schema/context"
+		 xmlns:p="http://www.springframework.org/schema/p"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 http://www.springframework.org/schema/beans/spring-beans.xsd
+		 http://www.springframework.org/schema/context
+		 http://www.springframework.org/schema/context/spring-context.xsd">
+		 
+		 
+		 <bean id="Emp1" name="Emp1" class="com.spring.Internal3.Employee">
+		 	<property name="ename" value="Spoorthi" />
+		 	<property name="eage" value="18" />
+		 	<property name="eaddress" value="Banglore" />
+		 </bean>
+		 
+		 <bean id="Emp2" name="Emp2" class="com.spring.Internal3.Employee">
+		 	<property name="ename" value="Sneha" />
+		 	<property name="eage" value="20" />
+		 	<property name="eaddress" value="Davanagere"/>
+		 </bean>
+		 
+		  <bean id="Emp3" name="Emp3" class="com.spring.Internal3.Employee">
+		 	<property name="ename" value="Sahana" />
+		 	<property name="eage" value="22" />
+		 	<property name="eaddress" value="Mysore"/>
+		 </bean>
+</beans>
+		 
+		 
+		 
+		 
+	
