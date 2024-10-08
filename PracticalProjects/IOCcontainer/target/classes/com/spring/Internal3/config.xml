@@ -7,29 +7,24 @@
 		 http://www.springframework.org/schema/beans/spring-beans.xsd
 		 http://www.springframework.org/schema/context
 		 http://www.springframework.org/schema/context/spring-context.xsd">
-		 
-		 
+
 		 <bean id="Emp1" name="Emp1" class="com.spring.Internal3.Employee">
-		 	<property name="ename" value="Spoorthi" />
+		 	<property name="ename" value="Darshan" />
 		 	<property name="eage" value="18" />
-		 	<property name="eaddress" value="Banglore" />
+		 	<property name="eaddress" value="Thumbigere" />
 		 </bean>
 		 
 		 <bean id="Emp2" name="Emp2" class="com.spring.Internal3.Employee">
-		 	<property name="ename" value="Sneha" />
+		 	<property name="ename" value="Guru" />
 		 	<property name="eage" value="20" />
 		 	<property name="eaddress" value="Davanagere"/>
 		 </bean>
-		 
 		  <bean id="Emp3" name="Emp3" class="com.spring.Internal3.Employee">
-		 	<property name="ename" value="Sahana" />
+		 	<property name="ename" value="Sandeep" />
 		 	<property name="eage" value="22" />
 		 	<property name="eaddress" value="Mysore"/>
 		 </bean>
-		 
-		 
-		 
-		 </beans>
+</beans>
 		 
 		 
 		 

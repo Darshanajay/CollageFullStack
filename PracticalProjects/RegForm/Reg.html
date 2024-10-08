@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RegistrarionForm</title>
+</head>
+<body>
+    
+    <h1>Registrarion Form</h1>
+    <fieldset>
+        <form action="Login.html">
+            <label> Name </label>
+            <input type="text" id="name" placeholder="Name"/><br><br>
+            <label> Email ID </label>
+            <input type="email" id="email" placeholder="abcd@gmil.com" /><br><br>
+            <label> Password </label>
+            <input type="Password" id="password" placeholder="password" /><br><br>
+            <button type="button"  onclick="saveData()" >Submit</button>
+            <button type="submit" > Login</button>
+        </form>
+    </fieldset>
+</body>
+<script>
+    function saveData() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value; 
+        var password = document.getElementById("password").value;
+
+        let userRecord = new Array();
+        userRecord = JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user")):[]
+        if(userRecord.some((v)=>{
+            return v.email === email && v.password === password
+        })){
+            alert("Duplicate Data")
+        }else{
+            userRecord.push({
+                name:name,
+                email:email,
+                password:password
+            })
+            localStorage.setItem("user",JSON.stringify(userRecord))
+        }   
+    }
+</script>
+</html>

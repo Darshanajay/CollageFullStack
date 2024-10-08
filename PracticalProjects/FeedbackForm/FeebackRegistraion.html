@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body onload="readData()">
+    <h1>FEEDBACK FORM</h1>
+    <div>
+        <div>
+            <fieldset>
+                <form class="Add-details"><br>
+                    <label for="FirstName">FirstName :</label>
+                    <input type="text" placeholder="First Name" id="FirstName"><br><br>
+                    <label for="LastName">LastName :</label>
+                    <input type="text" placeholder="Last Name" id="LastName"><br><br>
+                    <label for="Phone">Phone :</label>
+                    <input type="number" placeholder="Phone" id="Phone"><br><br>
+                    <label for="Email">Email :</label>
+                    <input type="email" placeholder="Email" id="Email"><br><br>
+                    <textarea placeholder="Your Feedback" id="Feedback"></textarea><br> <br>
+                    <button type="button" onclick="AddData()">submit</button>
+                </form> <br> <br> <hr>
+                
+                <h1>FEEDBACK DATA </h1>
+                <table border="2">
+                    <thead>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Feedback</th>
+                      </thead>
+                
+                      <tbody id="body">
+                       
+                      </tbody>
+                </table>
+            </fieldset>
+        </div>
+    </div>
+<script src="FeedbackReg.js"></script>
+</body>
+</html>

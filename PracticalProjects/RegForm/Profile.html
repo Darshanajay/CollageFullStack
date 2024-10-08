@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    Your name is <p id="name"> </p>
+    Your email is <p id="email"> </p>
+</body>
+<script>
+    let name = document.getElementById("name").innerText=localStorage.getItem("name");
+    let email = document.getElementById("email").innerText= localStorage.getItem("email");
+</script>
+</html>
