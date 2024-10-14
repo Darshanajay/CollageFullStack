@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FeedbackData</title>
+</head>
+
+<body onload="readData()">
+    <h1>FEEDBACK DATA </h1>
+    <table border="2">
+        <thead>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Feedback</th>
+        </thead>
+        <tbody id="body">
+        </tbody>
+    </table>
+    </fieldset>
+</body>
+<script>
+    function readData() {
+        var tabledata = document.getElementById("body");
+        var obj = localStorage.getItem("Data");
+        var objData = JSON.parse(obj);
+        var elements = "";
+        objData.map(record => (
+            elements += `<tr>
+    <td>${record.Name}</td>
+    <td>${record.Phone}</td>
+    <td>${record.Email}</td>
+    <td>${record.Feedback}</td>
+    </tr>`
+        ))
+        tabledata.innerHTML = elements;
+    }
+</script>
+
+</html>
