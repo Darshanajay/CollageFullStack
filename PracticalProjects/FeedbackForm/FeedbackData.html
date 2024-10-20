@@ -21,7 +21,6 @@
 </body>
 <script>
     function readData() {
-        var tabledata = document.getElementById("body");
         var obj = localStorage.getItem("Data");
         var objData = JSON.parse(obj);
         var elements = "";
@@ -33,7 +32,7 @@
     <td>${record.Feedback}</td>
     </tr>`
         ))
-        tabledata.innerHTML = elements;
+        document.getElementById("body").innerHTML = elements;
     }
 </script>
 
