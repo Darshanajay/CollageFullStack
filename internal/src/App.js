@@ -1,14 +1,16 @@
 import "./App.css";
-import Catalog from "./Components/Catalog";
+import PG from "./Components/PG";
+// import Catalog from "./Components/Catalog";
 // import Form from "./Components/Form";
 // import Final from "./Router/Final";
 
 function App() {
   return (
     <>
-      <Catalog />
+      {/* <Catalog /> */}
       {/* <Form /> */}
       {/* <Final /> */}
+      <PG />
     </>
   );
 }
