@@ -15,8 +15,10 @@ input{
   border: none;
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 #btn-blue{
   background-color: #4CAF50;
   color: white;
+  cursor: pointer;
 }
